@@ -26,22 +26,17 @@ them as show below.
 
 ---
 <figure>
+<p align="center">
  <img src="./test_images/straight_lines1.jpg" width="300"
 alt="Combined Image" />
- <figcaption>
- <p></p> 
- <p style="text-align: center;">
-Input Image </p> 
- </figcaption>
+</p>
 </figure>
  <p></p> 
 <figure>
+<p align="center">
  <img
-src="./output_images/straight_lines1.png" width="400" alt="Combined Image" />
-<figcaption>
- <p></p> 
- <p style="text-align: center;"> Output Image</p>
-</figcaption>
+src="./output_images/straight_lines1.png" width="400" alt="Output Image" />
+</p>
 </figure>
 
 ```python
@@ -105,13 +100,7 @@ plt.show()
 ```
 
 <figure>
- <img src="./output_images/calibration.png" width="990" alt="Combined
-Image" />
- <figcaption>
- <p></p> 
- <p style="text-align: center;"> Output
-Image</p> 
- </figcaption>
+ <img src="./output_images/calibration.png" width="990" alt="Calibration Image" />
 </figure>
 
 # Color Transforms and Gradients
@@ -121,8 +110,7 @@ most common approach is to run a filter through the image and then threshold the
 output. Here I have chosen to use a laplacian filter since it tracks the delta
 in both dimensions but it is by no means a requirement. 
 
-After closer
-inspection one will find that for certain lighting and road conditions applying
+After closer inspection one will find that for certain lighting and road conditions applying
 a filter on a graysclae image doesn't work as wells as we would like. We can
 instead transform our image to the HLS color space and then apply our laplacian
 filter to the saturation and luminosity channels. Additionally we can also
@@ -181,12 +169,7 @@ plt.show()
 ```
 
 <figure>
- <img src="./output_images/binary.png" width="990" alt="Combined Image"
-/>
- <figcaption>
- <p></p> 
- <p style="text-align: center;"> Output Image</p>
-</figcaption>
+ <img src="./output_images/binary.png" width="990" alt="Binary Image"/>
 </figure>
 
 # Perspective Transform and Fitting Lanes
@@ -239,13 +222,7 @@ plt.show()
 ```
 
 <figure>
- <img src="./output_images/birdseye.png" width="990" alt="Combined
-Image" />
- <figcaption>
- <p></p> 
- <p style="text-align: center;"> Output
-Image</p> 
- </figcaption>
+ <img src="./output_images/birdseye.png" width="990" alt="BirdsEye Image" />
 </figure>
 
 Now we must find the pixels corresponding to each lane. To do this we can look
@@ -253,12 +230,9 @@ at a histogram of the x values of each nonzero pixel. We can find where the
 pixels are concentrated and use the peaks as the base of our lanes.
 
 <figure>
- <img src="./output_images/histogram.png" width="300" alt="Combined
-Image" />
- <figcaption>
- <p></p> 
- <p style="text-align: center;"> Histogram</p>
-</figcaption>
+<p align="center">
+ <img src="./output_images/histogram.png" width="300" alt="Histogram Image" />
+</p>
 </figure>
 
 Once we have the base we separate the image into slices. Starting from the
@@ -339,13 +313,9 @@ plt.ylim(720, 0)
 ```
 
 <figure>
- <img src="./output_images/polyfit.png" width="400" alt="Combined
-Image" />
- <figcaption>
- <p></p> 
- <p style="text-align: center;"> Output
-Image</p> 
- </figcaption>
+<p align="center">
+ <img src="./output_images/polyfit.png" width="400" alt="PolyFit Image" />
+</p>
 </figure>
 
 # Radius of Curvature
@@ -407,12 +377,7 @@ plt.show()
 ```
 
 <figure>
- <img src="./output_images/final.png" width="990" alt="Combined Image"
-/>
- <figcaption>
- <p></p> 
- <p style="text-align: center;"> Output Image</p>
-</figcaption>
+ <img src="./output_images/final.png" width="990" alt="Final Image"/>
 </figure>
 
 # Discussion
@@ -442,3 +407,4 @@ from the pipline on a video stream:
 
 [![IMAGE ALT TEXT
 HERE](https://img.youtube.com/vi/T5kUmBSBjLI/0.jpg)](https://www.youtube.com/watch?v=T5kUmBSBjLI)
+
