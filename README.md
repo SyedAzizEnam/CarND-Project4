@@ -399,7 +399,7 @@ average of the polynomial coefficients
 
 The current pipline has vunerablities in
 its reliance on the color masks since the thresholds required will change for
-different settings. The  The techniques above should definitely be tried in
+different settings. The techniques above should definitely be tried in
 order to avoid the current pitfalls of the system.
 
 Here is link to the output
