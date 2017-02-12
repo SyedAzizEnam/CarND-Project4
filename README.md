@@ -387,7 +387,7 @@ the lanes in the right ball park but the detected lanes were very jitttery. To
 alleviate this problem I used pixels gathered from previous **n** frames as well
 as the current frame to smooth out the lanes transistions. Another technique
 that also helped was to remove outlier pixels that were far away from most of
-pixels in the lane.
+the pixels in the lane.
 
 Other interesting techniques that I did not have time to
 try were:
@@ -397,13 +397,9 @@ that resulted in a significant change in the curvature
 * Doing a weighted
 average of the polynomial coefficients
 
-The current pipline has vunerablities in
-its reliance on the color masks since the thresholds required will change for
-different settings. The techniques above should definitely be tried in
-order to avoid the current pitfalls of the system.
+The current pipline has vunerablities because of its reliance on the color mask thresholds. The correct thresholds that can vary in different settings. The techniques above should definitely be tried in order to avoid the current pitfalls of the system.
 
-Here is link to the output
-from the pipline on a video stream:
+Here is link to the output from the pipline on a video stream:
 
 [![IMAGE ALT TEXT
 HERE](https://img.youtube.com/vi/T5kUmBSBjLI/0.jpg)](https://www.youtube.com/watch?v=T5kUmBSBjLI)
