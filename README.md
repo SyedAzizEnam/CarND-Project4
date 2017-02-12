@@ -173,7 +173,7 @@ plt.show()
 </figure>
 
 # Perspective Transform and Fitting Lanes
-With our binary image we are now in
+With our binary image we're in
 good shape to identify our lane boundaries, the tricky part however is how to
 handle lanes that curve. To get a better understanding of the curvature of our
 lanes it would be helpful to be able to look at the lane from a birds eye
