@@ -337,7 +337,7 @@ def rad_curv(xarray, yarray):
 y_eval = np.max(lefty)
 left_lane_radius_of_curvature = rad_curv(leftx, lefty)
 right_lane_radius_of_curvature = rad_curv(rightx, righty)
-lane_pos = (left_fitx[-1] - right_fitx[-1])//2
+lane_pos = (left_fitx[-1] + right_fitx[-1])//2
 ```
 
 Finally with both lanes fitted and our curvature calculated we have all the
