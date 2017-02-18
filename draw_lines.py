@@ -218,7 +218,7 @@ def find_lines(img):
     y_eval = np.max(np.concatenate(left_lane.ally))
     left_lane.radius_of_curvature = rad_curv(np.concatenate(left_lane.allx), np.concatenate(left_lane.ally))
     right_lane.radius_of_curvature = rad_curv(np.concatenate(right_lane.allx), np.concatenate(right_lane.ally))
-    lane_pos = (left_lane.current_fit[-1] - right_lane.current_fit[-1])//2
+    lane_pos = (left_lane.current_fit[-1] + right_lane.current_fit[-1])//2
 
     left_fitx = left_lane.current_fit[0]*y**2 + left_lane.current_fit[1]*y + left_lane.current_fit[2]
     right_fitx = right_lane.current_fit[0]*y**2 + right_lane.current_fit[1]*y + right_lane.current_fit[2]
