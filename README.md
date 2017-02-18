@@ -402,5 +402,5 @@ The current pipline has vunerablities because of its reliance on the color mask 
 Here is link to the output from the pipline on a video stream:
 
 [![IMAGE ALT TEXT
-HERE](https://img.youtube.com/vi/T5kUmBSBjLI/0.jpg)](https://www.youtube.com/watch?v=T5kUmBSBjLI)
+HERE](https://img.youtube.com/vi/k3QPYeoambg/0.jpg)](https://www.youtube.com/watch?v=k3QPYeoambg)
 
